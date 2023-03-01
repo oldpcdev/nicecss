@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* Hard Reset */
+
+*{
+margin:0;
+padding:0;
+font:inherit;
+line-height:1;
+vertical-align:baseline;
+border:0;
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+
+*::after,*::before{box-sizing:inherit;-moz-box-sizing:inherit;-webkit-box-sizing:inherit;}
+
+	/* Fixes by me */
+
+		a{text-decoration:none;color:inherit;} /* Links */
+
+		i,em{font-style:italic;} /* Italic Text fix */
+
+		b,strong{font-weight:bold;} /* Bold Text fix */
+
+		ol,ul,li{list-style:none;} /* List fix */
+		
+	/* Fixes from normalize.css | MIT License | github.com/necolas/normalize.css */
+	
+		button,input,optgroup,select,textarea{margin:0;font:inherit;outline:none;line-height:inherit;} /* Text Fields font, outline, etc fix */
+	
+		code,kbd,samp{font-family:monospace;} /* Code Fix */
+
+		small{font-size:75%;}
+		
+		/* Sub and Sup fix */
+
+		sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+
+			sub{bottom:-0.25em;}
+
+			sup{top:-0.5em;}
+		
+		img{border:none;} /* IE image border fix */
+	
+	/* Clear fix */
+	
+	#header_container::before,#header_container::after,
+	#header::before,#header::after,
+	#header_nav::before,#header_nav::after,
+	#main::before,#main::after,
+	#content::before,#content::after,
+	#principal::before,#principal::after,
+	#what_is_missing::before,#what_is_missing::after,
+	#footer::before,#footer::after,
+	#footer_sides::before,#footer_sides::after,
+	#footer .copyright::before,#footer .copyright::after,
+	.post::before,.post::after,
+	.post h1::before,.post h1::after,
+	.post h2::before,.post h2::after,
+	.post h3::before,.post h3::after,
+	.post h4::before,.post h4::after,
+	.post h5::before,.post h5::after,
+	.post h6::before,.post h6::after,
+	.cl::before,.cl::after{content:"";display:table;}
+	
+	#header_container::after,
+	#header::after,
+	#header_nav::after,
+	#main::after,
+	#content::after,
+	#principal::after,
+	#what_is_missing::after,
+	#footer::after,
+	#footer_sides::after,
+	#footer .copyright::after,
+	.post::after,
+	.post h1::after,
+	.post h2::after,
+	.post h3::after,
+	.post h4::after,
+	.post h5::after,
+	.post h6::after,
+	.cl::after{clear:both;}
+
+/* End Reset */

@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+/* Other */
+
+::selection{background:#A86B31;color:#fbfbfb;}
+
+/* Body Structure */
+
+body{
+max-width:100vw;
+min-height:100vh;
+background:#e0ba82 url(bg.jpg) repeat-x;
+font:400 13px "Fira Sans","Trebuchet MS","Roboto",Arial,sans-serif;
+color:#fbfbfb;
+}
+
+body#main_page{background-image:url(bg_home.jpg);}
+
+#wrapper,#container{width:100%;min-height:100%;}
+/* End Body Structure */
+
+/* Header */
+
+#header_container{position:relative;height:125px;overflow:hidden;}
+
+	#header{width:930px;margin:0 auto;margin-top:45px;}
+	
+		/* Header Logo */
+	
+		#header #header_logo{float:left;width:217px;height:57px;background:url(sprite.png) -1px -289px no-repeat;text-indent:-9999px;}
+		
+		#header #header_logo:hover{background-position:-1px -231px;}
+		
+		#header #header_logo a{display:block;width:100%;height:100%;}
+		
+		/* Nav */
+		
+		#header_nav{position:absolute;bottom:0;right:200px;width:370px;}
+			
+				#header_nav > li > a{
+				float:left;
+				position:relative;
+				display:block;
+				margin-right:5px;
+				padding:6px 10px 0;
+				height:28px;
+				background:#6d6d6d;
+				font-size:15px;
+				font-weight:500;
+				letter-spacing:-.2px;
+				color:#e0e0e0;
+				}
+				
+				#header_nav > li > a:hover{padding-top:5px;color:#fbfbfb;}
+				
+					/* GitHub */
+				
+					#header_nav > li.github > a{padding-left:23px;}
+					
+					#header_nav > li.github > a span{
+					display:block;
+					position:absolute;
+					top:7px;
+					left:5px;
+					width:15px;
+					height:15px;
+					background:url(sprite.png) -1px -1px;
+					}
+					
+					#header_nav > li.github > a:hover span{top:6px;background-position:-1px -16px;}
+				
+				/* Rounded Borders */
+				
+				#header_nav > li > a::before,#header_nav > li > a::after{content:"";position:absolute;height:28px;width:5px;background:#6d6d6d url(borders.png);}
+				
+				#header_nav > li > a::before{top:0;left:0;background-position:0 0;}
+				
+				#header_nav > li > a::after{top:0;right:0;background-position:-5px 0;}
+		
+/* Page Tree */
+
+#page_tree_container{height:30px;}
+
+#main_page #page_tree_container{display:none;}
+
+	#page_tree{width:930px;margin:0 auto;padding-top:5px;color:#e0e0e0;}
+
+		#page_tree > li{float:left;}
+		
+			#page_tree > li > a{
+			position:relative;
+			display:block;
+			margin-top:2px;
+			margin-right:5px;
+			padding-right:20px;
+			font:400 14px/14px "Fira Sans",Arial,sans-serif;
+			}
+			
+			#page_tree > li > a:hover{color:#fbfbfb;}
+			
+			#page_tree > li > a::after{
+			content:"";
+			position:absolute;
+			top:1px;
+			right:2px;
+			width:13px;
+			height:13px;
+			background:url(sprite.png) -80px -27px;
+			}
+			
+			#page_tree > li > a:hover::after{background-position:-80px -40px;}
+			
+				#page_tree > li.last > a{padding-right:0;}
+				
+				#page_tree > li.last > a::after{display:none;}
+			
+/* Main */
+			
+#main{width:930px;margin:15px auto 30px;}
+
+#main_page #main{margin-top:25px;}
+
+	/* Sidebar */
+	
+	#sidebar_left{position:relative;float:left;width:290px;}
+	
+		/* Title */
+	
+		#sidebar_left .title{margin-bottom:10px;font:500 26px/26px "Labrada",Georgia,Times,serif;letter-spacing:-.4px;color:#CC3C2F;}
+		
+		#sidebar_left .title span{position:relative;display:inline-block;padding-right:36px;}
+		
+		#sidebar_left .title span::after{
+		content:"";
+		position:absolute;
+		top:0;
+		right:0;
+		width:26px;
+		height:26px;
+		background:url(sprite.png);
+		}
+		
+		/* Sidebar Boxes */
+		
+		.box{margin-bottom:10px;}
+		
+		.box > li{display:block;}
+		
+				.box > li > a{
+				position:relative;
+				display:inline-block;
+				margin-left:5px;
+				padding:5px 0 5px 18px;
+				font-weight:500;
+				letter-spacing:-.2px;
+				line-height:13px;
+				color:#6b390b;
+				}
+				
+				.box > li > a::before{
+				content:"";
+				position:absolute;
+				top:5px;
+				left:0;
+				width:13px;
+				height:13px;
+				background:url(sprite.png);
+				}
+				
+				.box > li > a:hover{color:#A86B31;}
+		
+		/* Latest Posts */
+		
+		#sidebar_left .title.archive span::after{background-position:-16px -1px;}
+		
+			#sidebar_left .latest_posts > li > a::before{background-position:-43px -1px;}
+			
+			#sidebar_left .latest_posts > li > a:hover::before{background-position:-43px -15px;}
+			
+				/* RSS */
+				
+				#sidebar_left .latest_posts > .rss{display:inline-block;margin-top:5px;margin-left:-5px;}
+					
+					/* Link */
+				
+					#sidebar_left .latest_posts > .rss > a{width:83px;height:25px;background:url(borders.png) 0 -43px;text-indent:-9999px;}
+					
+					#sidebar_left .latest_posts > .rss > a::after,#sidebar_left .latest_posts > .rss > a::before{display:none;}
+					
+						#sidebar_left .latest_posts > .rss:hover > a{background-position:0 -68px;color:#fbfbfb;}
+			
+		/* Contact */
+		
+		#sidebar_left .title.contact_title span::after{background-position:-16px -28px;}
+		
+			#contact > li.mail > a::before{background-position:-43px -56px;}
+			
+			#contact > li.mail > a:hover::before{background-position:-43px -70px;}
+			
+		/* About */
+		
+		#sidebar_left .title.about_title span::after{background-position:-16px -55px;}
+		
+		#sidebar_left .about{
+		position:relative;
+		width:195px;
+		margin:5px 0 11px 5px;
+		padding:5px 10px;
+		background:#6b390b;
+		color:#e0ba82;
+		}
+		
+		#sidebar_left .about:hover{background:#A86B31;color:#fbfbfb;}
+		
+		#sidebar_left .about:hover *::selection{background:#6b390b;}
+		
+			#sidebar_left .about p{position:relative;margin-bottom:5px;font:italic 600 13px/20px "Labrada",Georgia,Times,serif;word-spacing:2px;}
+			
+			#sidebar_left .about p::after{
+			content:"";
+			position:absolute;
+			bottom:-3px;
+			right:10px;
+			width:22px;
+			height:22px;
+			background:url(sprite.png) -57px -184px;
+			}
+			
+			#sidebar_left .about:hover p::after{background-position:-57px -207px;}
+			
+				#sidebar_left .about p a{color:#e0e0e0;}
+				
+				#sidebar_left .about p a:hover{text-decoration:underline;}
+		
+			/* Rounded Borders */
+			
+			#sidebar_left .about::before,#sidebar_left .about::after{content:"";position:absolute;width:195px;height:5px;background:url(borders.png) no-repeat;}
+			
+			#sidebar_left .about::before{top:0;left:0;background-position:-10px 0;}
+			
+			#sidebar_left .about:hover::before{top:0;left:0;background-position:-10px -21px;}
+			
+			#sidebar_left .about::after{bottom:-11px;left:0;height:16px;background-position:-10px -5px;}
+			
+			#sidebar_left .about:hover::after{left:0;background-position:-10px -26px;}
+	
+	/* Content */
+	
+	#content{float:left;width:570px;margin-left:20px;}
+	
+		/* Some Fixes */
+		
+		#principal,
+		#what_is_missing,
+		#wait,
+		.post{margin-bottom:10px;}
+		
+		#principal h1,#wait h1{margin-bottom:5px;}
+	
+		/* Principal */
+		
+		#principal{text-align:right;}
+		
+			/* Sides */
+		
+			#principal .side{float:left;}
+			
+				#principal .left{width:350px;margin-right:20px;}
+				
+				#principal .right{width:140px;}
+		
+			/* Left Content */
+			
+			#principal h1{font:500 32px/25px "Labrada",Georgia,Times,sans-serif;letter-spacing:.6px;color:#297B8F;}
+			
+				#principal h1 .emph{letter-spacing:-.2px;color:#1E5A69;}
+			
+			#principal p{font-size:16px;line-height:24px;color:#297B8F;}
+			
+			/* Right Content */
+			
+			#principal .right > div{height:110px;width:140px;background:url(../img/announcement.jpg) no-repeat;}
+			
+	/* What Is Missing */
+	
+	#what_is_missing .side{float:left;width:270px;}
+	
+		#what_is_missing .left{margin-right:30px;}
+		
+		#what_is_missing > ul{margin:10px 0 5px;}
+	
+		#what_is_missing > ul > li{
+		position:relative;
+		margin-bottom:10px;
+		padding-left:28px;
+		font:400 22px/22px "Fira Sans","Trebuchet MS",Arial,sans-serif;
+		letter-spacing:-.6px;
+		color:#8C2920;
+		}
+		
+		#what_is_missing > ul > li::after{
+		content:"";
+		position:absolute;
+		top:0;
+		left:0;
+		width:22px;
+		height:22px;
+		background:url(sprite.png) no-repeat;
+		}
+		
+			#what_is_missing > ul > li.personality{color:#6b390b;} #what_is_missing ul > li.personality::after{background-position:-57px -1px;}
+			
+			#what_is_missing > ul > li.colors{color:#1085a3;} #what_is_missing ul > li.colors::after{background-position:-57px -23px;}
+			
+			#what_is_missing > ul > li.speed{color:#1E5A69;} #what_is_missing ul > li.speed::after{background-position:-57px -47px;}
+			
+			#what_is_missing > ul > li.freedom{color:#A86B31;} #what_is_missing ul > li.freedom::after{background-position:-57px -70px;}
+			
+			#what_is_missing > ul > li.stability{color:#fbfbfb;} #what_is_missing ul > li.stability::after{background-position:-57px -93px;}
+			
+			#what_is_missing > ul > li.content{color:#D94032;} #what_is_missing ul > li.content::after{background-position:-57px -115px;}
+			
+			#what_is_missing > ul > li.tracking{color:#6d6d6d;} #what_is_missing ul > li.tracking::after{background-position:-57px -139px;}
+			
+			#what_is_missing > ul > li.acessibility{color:#297B8F;} #what_is_missing ul > li.acessibility::after{background-position:-57px -162px;}
+	
+	/* Post Elements */
+	
+	.post{margin-bottom:5px;}
+	
+		/* Post Headings */
+		
+		.post h1,
+		.post h2,
+		.post h3,
+		.post h4,
+		.post h5,
+		.post h6{margin-bottom:5px;font:500 100%/26px "Labrada",Georgia,Times,serif;color:#A86B31;}
+		
+		.post h1{margin-bottom:10px;font-size:26px;color:#6b390b;}
+		
+		.post h2{font-size:24px;}
+		
+		.post h3,.post h4,.post h5,.post h6{margin-left:5px;}
+		
+		.post h3{font-size:22px;}
+		
+		.post h4{font-size:20px;}
+		
+		.post h5{font-size:18px;}
+		
+		.post h6{font-size:16px;}
+		
+		/* Post Paragraphs */
+		
+		.post p{margin:0 0 10px 10px;font:400 14px/26px "Fira Sans","Trebuchet MS",Arial,sans-serif;letter-spacing:-.2px;color:#301903;}
+		
+		.post p a{color:#1E5A69;}
+		
+		.post p a:hover{text-decoration:underline;}
+		
+		/* Post Date */
+		
+		.post p.pub_date{font-family:"Labrada",Georgia,Times,serif;font-style:italic;color:#555555;}
+		
+				.post p.pub_date .author{font-weight:600;color:#1E5A69;}
+				
+		/* Post Images */
+		
+		.post > .img_box{margin:5px 0;}
+		
+			.post > .img_box img{display:block;max-width:560px;margin:0 auto;border:1px solid #555555;}
+			
+			.post > .img_box:hover img{border-color:#8a8a8a;}
+			
+			.post > .img_box p{margin-top:5px;text-align:center;}
+		
+		/* Post Lists */
+		
+		.post .list{margin:10px;}
+		
+			.post .list > li{display:block;}
+			
+				.post .list > li > a{position:relative;display:block;padding:0 0 10px 16px;font:400 13px/13px "Fira Sans","Trebuchet MS",Arial,sans-serif;color:#6b390b;}
+				
+				.post .list > li > a:hover{text-decoration:underline;color:#1E5A69;}
+				
+				.post .list > li > a::before{
+				content:"";
+				position:absolute;
+				top:0;
+				left:0;
+				width:13px;
+				height:13px;
+				background:url(sprite.png) -43px -1px;
+				}
+				
+				.post .list > li > a:hover::before{background:url(sprite.png) -43px -85px;}
+		
+/* End of Main */
+
+/* Footer */
+
+#footer_container{height:230px;background:#6b390b url(foot_bg.jpg) repeat-x;}
+
+	#footer{width:930px;margin:0 auto;}
+	
+		/* Footer Selection and Links */
+		
+		#footer *::selection{background:#e0ba82;color:#6b390b;}
+		
+		#footer a:hover{text-decoration:underline;}
+	
+		/* Sides */
+		
+		#footer_sides{margin-top:10px;height:170px;}
+	
+			#footer #footer_sides .side{float:left;width:260px;padding:15px 10px;}
+			
+				#footer #footer_sides .center{width:390px;}
+			
+		/* Title */
+		
+		#footer h1{margin-bottom:10px;font-family:"Labrada",Georgia,Times,serif;font-size:22px;letter-spacing:-.4px;color:#F59B47;}
+		
+		/* Latest Posts */
+
+			#footer .latest_posts > li > a{
+			position:relative;
+			display:block;
+			padding:5px 0 5px 16px;
+			font-size:12px;
+			letter-spacing:-.2px;
+			color:#e0ba82;
+			}
+			
+			#footer .latest_posts > li > a:hover{color:#e0e0e0;}
+			
+			#footer .latest_posts > li > a::before{
+			content:"";
+			position:absolute;
+			top:5px;
+			left:0;
+			width:12px;
+			height:12px;
+			background:url(sprite.png) -80px -1px;
+			}
+			
+			#footer .latest_posts > li > a:hover::before{background-position:-80px -14px;}
+			
+				/* RSS */
+				
+				#footer .latest_posts > .rss{display:inline-block;margin-top:5px;}
+					
+					/* Link */
+				
+					#footer .latest_posts > .rss > a{width:83px;height:25px;background:url(borders.png) 0 -68px;text-indent:-9999px;}
+					
+					#footer .latest_posts > .rss > a::after,#footer .latest_posts > .rss > a::before{display:none;}
+					
+						#footer .latest_posts > .rss:hover > a{background-position:0 -43px;color:#fbfbfb;}
+		
+		/* Projects */
+		
+		#footer .projects{margin-left:5px;}
+		
+		#footer .projects > li > a{
+		position:relative;
+		display:block;
+		padding:5px 0 5px 0;
+		font-size:12px;
+		letter-spacing:-.2px;
+		color:#e0ba82;
+		}
+			
+		/* About */
+		
+		#footer .about{margin-left:5px;}
+		
+			#footer .about p{font:italic 600 13px/19px "Labrada",Georgia,Times,serif;color:#e0ba82;}
+		
+				#footer .about p a{color:#e0e0e0;}
+				
+				#footer .about p a:hover{color:#fbfbfb;}
+			
+		/* Copyright */
+			
+		#footer .copyright{margin-top:10px;font:500 15px/15px "Labrada",Georgia,Times,serif;color:#F59B47;}
+		
+			#footer .copyright .side{float:left;}
+			
+				#footer .copyright .right{float:right;width:250px;text-align:right;}
+				
+				#footer .copyright .left{width:600px;}
+		
+			#footer .copyright a{font-style:italic;letter-spacing:.5px;color:#e0e0e0;}
