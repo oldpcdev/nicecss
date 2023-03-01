@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
  <rss version="2.0" 
  	xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:atom="http://www.w3.org/2005/Atom"
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
- >
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/" >
 	<channel>
 		
 		<title>NiceCSS RSS Feed</title>
@@ -32,7 +31,7 @@
 			]]></description>
 			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/outdated-methods.html</link>
 			<guid>https://oldpcdev.github.io/nicecss/articles/2023/02/outdated-methods.html</guid>
-			<pubDate>Sat, 25 Feb 2023 11:00:00 +0000</pubDate>
+			<pubDate>Tue, 28 Feb 2023 11:00:00 +0000</pubDate>
 		</item>
 		<item>
 			<title>First Post</title>
@@ -71,9 +70,9 @@
 
 				<p>Thanks to <a href="https://www.svgrepo.com/collection/instructure-ui-filled-interface-icons/" target="_blank">instructure-ui</a> for the icons and to <a href="https://www.svgrepo.com/svg/500728/umbrella" target="_blank">element-plus</a> by the umbrella of the logo. All fonts came from Google Fonts.</p>
 			]]></description>
-			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post-html</link>
-			<guid>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post-html</guid>
-			<pubDate>Sat, 25 Feb 2023 11:00:00 +0000</pubDate>
+			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post.html</link>
+			<guid>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post.html</guid>
+			<pubDate>Tue, 28 Feb 2023 11:00:00 +0000</pubDate>
 		</item>
 		
 	</channel>
