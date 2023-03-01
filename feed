@@ -3,9 +3,9 @@
 	<channel>
 		
 		<title>NiceCSS RSS Feed</title>
-		<atom:link href="https://oldpcdev.github.io/nicecss/feed" rel="self"/>
+		<atom:link href="https://oldpcdev.github.io/nicecss/feed" rel="self" type="application/rss+xml" />
 		<description>Articles from NiceCSS</description>
-		<link>https://oldpcdev.github.io/nicecss</link>
+		<link>https://oldpcdev.github.io/nicecss/feed</link>
 		
 		<item>
 			<title>Why i use some "outdated" CSS methods?</title>
