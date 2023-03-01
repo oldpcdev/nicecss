@@ -3,7 +3,7 @@
 	<channel>
 		
 		<title>NiceCSS RSS Feed</title>
-		<atom:link href="https://oldpcdev.github.io/nicecss/feed/index.xml" rel="self"/>
+		<atom:link href="https://oldpcdev.github.io/nicecss/feed" rel="self"/>
 		<description>Articles from NiceCSS</description>
 		<link>https://oldpcdev.github.io/nicecss</link>
 		
@@ -63,7 +63,7 @@
 				<p>These versions aren't special and didn't bring almost anything new, just a redesign of the logo, the stylization of the posts. and fixed (many) bugs in CSS.</p>
 				
 				<div class="img_box">
-					<img src="../../../img/v0.0.8.8.jpg" alt="v0.0.8 screenshot">
+					<img src="https://oldpcdev.github.io/nicecss/img/v0.0.8.8.jpg" alt="v0.0.8 screenshot">
 					<p>Screenshot of the 0.0.8 version</p>
 				</div>
 
