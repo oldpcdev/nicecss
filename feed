@@ -3,14 +3,12 @@
 	<channel>
 		
 		<title>NiceCSS RSS Feed</title>
-		<atom:link href="https://oldpcdev.github.io/nicecss/feed" rel="self" type="application/rss+xml" />
 		<description>Articles from NiceCSS</description>
 		<link>https://oldpcdev.github.io/nicecss/feed</link>
 		
 		<item>
 			<title>Why i use some "outdated" CSS methods?</title>
 			<description>The reason I use these methods is the ease and control I have over the elements.</description>
-			<author>oldpcdev</author>
 			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/outdated-methods.html</link>
 			<pubDate>Sat, 25 Feb 2023 11:00:00 +0000</pubDate>
 			<content>
@@ -32,7 +30,6 @@
 		<item>
 			<title>First Post</title>
 			<description>This post serves as a “changelog” and to show you step-by-step how I built NiceCSS.</description>
-			<author>oldpcdev</author>
 			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post-html</link>
 			<pubDate>Sat, 25 Feb 2023 11:00:00 +0000</pubDate>
 			<content>
@@ -61,11 +58,8 @@
 				<h2>Version 0.0.7.xy - 0.0.8.xy: No new ideas</h2>
 
 				<p>These versions aren't special and didn't bring almost anything new, just a redesign of the logo, the stylization of the posts. and fixed (many) bugs in CSS.</p>
-				
-				<div class="img_box">
 					<img src="https://oldpcdev.github.io/nicecss/img/v0.0.8.8.jpg" alt="v0.0.8 screenshot">
 					<p>Screenshot of the 0.0.8 version</p>
-				</div>
 
 				<h2>Version 0.0.9.xy - 0.1.0: Calm is the key to perfection</h2>
 
