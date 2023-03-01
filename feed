@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
- <rss version="2.0">
+ <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		
 		<title>NiceCSS RSS Feed</title>
 		<description>Articles from NiceCSS</description>
 		<link>https://oldpcdev.github.io/nicecss/feed</link>
-		
+		<atom:link rel="self" href="https://oldpcdev.github.io/nicecss/feed" />
 		<item>
 			<title>Why i use some "outdated" CSS methods?</title>
 			<description>The reason I use these methods is the ease and control I have over the elements.</description>
 			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/outdated-methods.html</link>
+			<guid>https://oldpcdev.github.io/nicecss/articles/2023/02/outdated-methods.html</guid>
 			<pubDate>Sat, 25 Feb 2023 11:00:00 +0000</pubDate>
 			<content>
 				<h1>Why i use some “outdated” methods?</h1>
@@ -31,6 +32,7 @@
 			<title>First Post</title>
 			<description>This post serves as a “changelog” and to show you step-by-step how I built NiceCSS.</description>
 			<link>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post-html</link>
+			<guid>https://oldpcdev.github.io/nicecss/articles/2023/02/first-post-html</guid>
 			<pubDate>Sat, 25 Feb 2023 11:00:00 +0000</pubDate>
 			<content>
 				<h1>First Post</h1>
@@ -58,14 +60,14 @@
 				<h2>Version 0.0.7.xy - 0.0.8.xy: No new ideas</h2>
 
 				<p>These versions aren't special and didn't bring almost anything new, just a redesign of the logo, the stylization of the posts. and fixed (many) bugs in CSS.</p>
-					<img src="https://oldpcdev.github.io/nicecss/img/v0.0.8.8.jpg" alt="v0.0.8 screenshot">
+					<img src="https://oldpcdev.github.io/nicecss/img/v0.0.8.8.jpg" alt="v0.0.8 screenshot" />
 					<p>Screenshot of the 0.0.8 version</p>
 
 				<h2>Version 0.0.9.xy - 0.1.0: Calm is the key to perfection</h2>
 
 				<p>An (almost) happy ending for NiceCSS. What's new are bug fixes and the NiceCSS upload on GitHub Pages.</p>
 
-				<p>Thanks to <a href="https://www.svgrepo.com/collection/instructure-ui-filled-interface-icons/" target="_blank">instructure-ui</a> for the icons and to <a href="https://www.svgrepo.com/svg/500728 /umbrella" target="_blank">element-plus</a> by the umbrella of the logo. All fonts came from Google Fonts.</p>
+				<p>Thanks to <a href="https://www.svgrepo.com/collection/instructure-ui-filled-interface-icons/" target="_blank">instructure-ui</a> for the icons and to <a href="https://www.svgrepo.com/svg/500728/umbrella" target="_blank">element-plus</a> by the umbrella of the logo. All fonts came from Google Fonts.</p>
 			</content>
 		</item>
 		
