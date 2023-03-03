@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* INFO 
+ * Name: NiceCSS Reset
+ * Version: 0.0.9.1
+ * License: GPL V3
+ * */
+
 /* Hard Reset */
 
 *{
@@ -16,7 +22,7 @@ box-sizing:border-box;
 
 *::after,*::before{box-sizing:inherit;-moz-box-sizing:inherit;-webkit-box-sizing:inherit;}
 
-	/* Fixes by me */
+	/* Text Fixes */
 
 		a{text-decoration:none;color:inherit;} /* Links */
 
@@ -25,6 +31,8 @@ box-sizing:border-box;
 		b,strong{font-weight:bold;} /* Bold Text fix */
 
 		ol,ul,li{list-style:none;} /* List fix */
+		
+		code,pre{font-family:monospace, monospace;}
 		
 	/* Fixes from normalize.css | MIT License | github.com/necolas/normalize.css */
 	
@@ -76,12 +84,14 @@ box-sizing:border-box;
 	#footer_sides::after,
 	#footer .copyright::after,
 	.post::after,
-	.post h1::after,
-	.post h2::after,
-	.post h3::after,
-	.post h4::after,
-	.post h5::after,
-	.post h6::after,
+	.post h1::before,
+	.post h2::before,
+	.post h3::before,
+	.post h4::before,
+	.post h5::before,
+	.post h6::before,
 	.cl::after{clear:both;}
+	
+	/* End Clearfix */
 
 /* End Reset */

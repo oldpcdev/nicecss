@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* 950px */
+
+@media only screen and (max-width: 1024px) {
+	
+		#header,#page_tree,#main{max-width:95%;}
+		
+			#header_nav{bottom:0;right:0;}
+			
+		#main{max-width:100%;}
+		
+			#sidebar_left{max-width:250px;padding-left:20px;}
+			
+			#content{width:540px;margin-left:0;}
+			
+				#what_is_missing .side{max-width:240px;}
+			
+					.post blockquote,.post pre{width:540px;}
+					
+					.post blockquote::after,.post blockquote::before,.post pre::after,.post pre::before{width:540px;}
+					
+					.post blockquote::before,.post pre::before{background-position:-83px -63px;}
+					
+					.post blockquote:hover::before,.post pre:hover::before{background-position:-83px -73px;}
+					
+					.post blockquote::after,.post pre::after{background-position:-83px -68px;}
+					
+					.post blockquote:hover::after,.post pre:hover::after{background-position:-83px -78px;}
+		
+		#footer_container{max-width:100%;}
+
+			#footer{width:95%;}
+			
+				#footer #footer_sides .side{width:240px;}
+				
+			#footer .copyright{font-size:12px;line-height:12px;}
+}
+
+/* 650px */
+
+@media only screen and (max-width: 799px) {
+
+	#sidebar_left{padding-left:5px;max-width:220px;}
+
+	#content{max-width:430px;}
+	
+		#principal .left{width:270px;}
+		
+			#principal h1{font-size:22px;}
+			
+			#principal p{font-size:16px;}
+			
+			.post blockquote,.post pre{max-width:100%;}
+			
+			.post blockquote::before,.post pre::before,.post blockquote::after,.post pre::after{display:none;}
+	
+		#what_is_missing .side{max-width:190px;}
+	
+					.post blockquote::after,.post blockquote::before,.post pre::after,.post pre::before{display:none;}
+					
+					#footer #footer_sides .side{width:190px;}
+					
+					#footer .about p{line-height:15px;}
+}
