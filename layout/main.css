@@ -23,6 +23,7 @@ color:#fbfbfb;
 body#main_page{background-image:url(bg_home.jpg);}
 
 #wrapper,#container{width:100%;min-height:100%;}
+
 /* End Body Structure */
 
 /* Header */
@@ -35,7 +36,7 @@ body#main_page{background-image:url(bg_home.jpg);}
 	
 		#header #header_logo{float:left;width:217px;height:57px;background:url(sprite.png) -1px -289px no-repeat;text-indent:-9999px;}
 		
-		#header #header_logo:hover{background-position:-1px -232px;}
+		#header #header_logo:hover,#header #header_logo:focus{background-position:-1px -232px;}
 		
 		#header #header_logo a{display:block;width:100%;height:100%;}
 		
@@ -343,7 +344,7 @@ body#main_page{background-image:url(bg_home.jpg);}
 		
 		.post p a{color:#1E5A69;}
 		
-		.post p a:hover{text-decoration:underline;}
+		.post p a:hover,.post p a:focus{text-decoration:underline;}
 		
 		/* Post Date */
 		
@@ -383,23 +384,74 @@ body#main_page{background-image:url(bg_home.jpg);}
 				
 				.post .list > li > a:hover{text-decoration:underline;color:#1E5A69;}
 				
-			/* Post Blockquotes */
+		/* Post Blockquotes */
+		
+		.post blockquote{
+		position:relative;
+		width:570px;
+		margin:10px 0;
+		padding:20px 15px;
+		background:#6b390b;
+		}
+		
+		.post blockquote:hover{background:#A86B31;}
+		
+		.post blockquote:hover *::selection{background:#6b390b;}
+		
+			/* Rounded Borders */
 			
-			.post blockquote{
+			.post blockquote::before,.post blockquote::after{
+			content:"";
+			position:absolute;
+			width:570px;
+			height:5px;
+			background:url(borders.png);
+			}
+			
+			.post blockquote::before{top:0;left:0;background-position:-83px -43px;}
+			
+			.post blockquote::after{bottom:0;left:0;background-position:-83px -48px;}
+			
+			.post blockquote:hover::before{background-position:-83px -53px;}
+			
+			.post blockquote:hover::after{background-position:-83px -58px;}
+		
+			.post blockquote p{margin:0;padding:0 42px 0 0;font-size:16px;font-style:italic;letter-spacing:.8px;color:#F59B47;}
+			
+			.post blockquote:hover p{color:#fbfbfb;}
+			
+			.post blockquote p::after{
+			content:"";
+			position:absolute;
+			bottom:10px;
+			right:20px;
+			width:22px;
+			height:22px;
+			background:url(sprite.png) -57px -184px;
+			}
+			
+			.post blockquote:hover p::after{background-position:-57px -207px}
+			
+			/* Code */
+			
+			.post pre{
 			position:relative;
 			width:570px;
 			margin:10px 0;
 			padding:20px 15px;
 			background:#6b390b;
+			font-size:16px;
+			line-height:24px;
+			color:#F59B47;
 			}
 			
-			.post blockquote:hover{background:#A86B31;}
+			.post pre:hover{background:#A86B31;color:#fbfbfb;}
 			
-			.post blockquote:hover *::selection{background:#6b390b;}
+			.post pre:hover *::selection{background:#6b390b;}
 			
 				/* Rounded Borders */
 				
-				.post blockquote::before,.post blockquote::after{
+				.post pre::before,.post pre::after{
 				content:"";
 				position:absolute;
 				width:570px;
@@ -407,76 +459,25 @@ body#main_page{background-image:url(bg_home.jpg);}
 				background:url(borders.png);
 				}
 				
-				.post blockquote::before{top:0;left:0;background-position:-83px -43px;}
-				
-				.post blockquote::after{bottom:0;left:0;background-position:-83px -48px;}
-				
-				.post blockquote:hover::before{background-position:-83px -53px;}
-				
-				.post blockquote:hover::after{background-position:-83px -58px;}
+				.post pre::before{top:0;left:0;background-position:-83px -43px;}
 			
-				.post blockquote p{margin:0;padding:0 42px 0 0;font-size:16px;font-style:italic;letter-spacing:.8px;color:#F59B47;}
+				.post pre::after{bottom:0;left:0;background-position:-83px -48px;}
 				
-				.post blockquote:hover p{color:#fbfbfb;}
+				.post pre:hover::before{background-position:-83px -53px;}
 				
-				.post blockquote p::after{
+				.post pre:hover::after{background-position:-83px -58px;}
+				
+				.post pre > span::after{
 				content:"";
 				position:absolute;
-				bottom:10px;
-				right:20px;
+				right:30px;
+				bottom:20px;
 				width:22px;
 				height:22px;
-				background:url(sprite.png) -57px -184px;
+				background:url(sprite.png) -80px -185px;
 				}
 				
-				.post blockquote:hover p::after{background-position:-57px -207px}
-				
-				/* Code */
-				
-				.post pre{
-				position:relative;
-				width:570px;
-				margin:10px 0;
-				padding:20px 15px;
-				background:#6b390b;
-				font-size:16px;
-				line-height:24px;
-				color:#F59B47;
-				}
-				
-				.post pre:hover{background:#A86B31;color:#fbfbfb;}
-				
-				.post pre:hover *::selection{background:#6b390b;}
-				
-					/* Rounded Borders */
-					
-					.post pre::before,.post pre::after{
-					content:"";
-					position:absolute;
-					width:570px;
-					height:5px;
-					background:url(borders.png);
-					}
-					
-					.post pre::before{top:0;left:0;background-position:-83px -43px;}
-				
-					.post pre::after{bottom:0;left:0;background-position:-83px -48px;}
-					
-					.post pre:hover::before{background-position:-83px -53px;}
-					
-					.post pre:hover::after{background-position:-83px -58px;}
-					
-					.post pre > span::after{
-					content:"";
-					position:absolute;
-					right:30px;
-					bottom:20px;
-					width:22px;
-					height:22px;
-					background:url(sprite.png) -80px -185px;
-					}
-					
-					.post pre:hover > span::after{background-position:-80px -208px;}
+				.post pre:hover > span::after{background-position:-80px -208px;}
 		
 /* End of Main */
 

@@ -1,5 +1,30 @@
 @charset "utf-8";
 
+/* 1920px */
+
+@media only screen and (min-width: 1600px){
+
+	#sidebar_left .about p{font-size:16px;line-height:24px;}
+	
+	.post p{font-size:16px;}
+
+	#footer_container{
+	height:270px;
+	}
+	
+		#footer h1{font-size:28px;}
+		
+		#footer .about p{font-size:16px;}
+		
+		#footer .latest_posts > li > a,#footer .projects > li > a{font-size:14px;}
+	
+		#footer_sides{height:200px;}
+		
+		#footer .copyright{font-size:18px;}
+		
+		#footer .copyright .left{width:800px;}
+}
+
 /* 950px */
 
 @media only screen and (max-width: 1024px) {
