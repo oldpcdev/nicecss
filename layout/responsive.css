@@ -2,15 +2,13 @@
 
 /* 1920px */
 
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1800px){
 
 	#sidebar_left .about p{font-size:16px;line-height:24px;}
 	
 	.post p{font-size:16px;}
 
-	#footer_container{
-	height:270px;
-	}
+	#footer_container{height:270px;}
 	
 		#footer h1{font-size:28px;}
 		
@@ -40,6 +38,8 @@
 			#content{width:540px;margin-left:10px;}
 			
 				#what_is_missing .side{max-width:240px;}
+				
+					.post .img_box img{max-width:530px;}
 			
 					.post blockquote,.post pre{width:540px;}
 					
@@ -75,6 +75,8 @@
 			#principal h1{font-size:22px;}
 			
 			#principal p{font-size:16px;}
+			
+			.post .img_box img{max-width:415px;}
 			
 			.post blockquote,.post pre{max-width:100%;}
 			

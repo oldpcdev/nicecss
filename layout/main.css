@@ -378,9 +378,9 @@ body#main_page{background-image:url(bg_home.jpg);}
 		
 			.post > .img_box img{
 			display:block;
-			min-width:170px;
+			min-width:200px;
 			max-width:560px;
-			min-height:130px;
+			min-height:110px;
 			margin:0 auto;
 			padding:2px;
 			background:#fbfbfb url(../img/not_found.jpg) center no-repeat;
@@ -589,6 +589,26 @@ body#main_page{background-image:url(bg_home.jpg);}
 				}
 				
 				.post pre:hover > span::after{background-position:-80px -208px;}
+				
+			/* Tables */
+				
+			.post table{margin:15px 10px 5px;}
+			
+				.post table th,.post table td{letter-spacing:-.2px;}
+			
+				.post table td{padding:7px 9px;}
+				
+				.post table th{padding:10px 9px;background:#6b390b;font-family:"Labrada";font-weight:500;border:1px solid #6b390b;color:#F59B47;}
+				
+					.post table th:hover{background:#301903;border-color:#301903;color:#e0ba82;}
+				
+				.post table td{background:#f0f0f0;border:1px solid #bbbbbb;color:#6b390b;}
+				
+					.post table td:hover{background:#e0e0e0;cursor:pointer;border-color:#c0c0c0;color:#A86B31;}
+				
+					.post table td a,.post table th a{text-decoration:underline;}
+					
+						.post table td:hover a,.post table th:hover a{text-decoration:none;}
 		
 /* End of Main */
 

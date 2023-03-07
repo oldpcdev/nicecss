@@ -2,7 +2,7 @@
 
 /* INFO 
  * Name: NiceCSS Reset
- * Version: 0.0.9.3
+ * Version: 0.0.9.4
  * License: GPL V3
  * */
 
@@ -35,6 +35,10 @@ box-sizing:border-box;
 		
 		code,pre{font-family:monospace, monospace;} /* Code */
 		
+		table{border-collapse:collapse;text-align:center;} /* Table Fix */
+		
+			table th,table td{font-weight:400;}
+		
 	/* Fixes from normalize.css and me | MIT License | github.com/necolas/normalize.css */
 	
 		button,input,optgroup,select,textarea{margin:0;background:transparent;font:inherit;outline:none;line-height:inherit;} /* Text Fields font, outline, etc fix */
@@ -53,7 +57,7 @@ box-sizing:border-box;
 		
 		img{display:inline-block;border:none;} /* Image border fix */
 	
-	/* Clear fix */
+	/* Clear fix (Brownlooks only) */
 	
 	#header_container::before,#header_container::after,
 	#header::before,#header::after,
