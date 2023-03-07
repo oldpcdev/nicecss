@@ -2,7 +2,7 @@
 
 /* INFO 
  * Name: NiceCSS Reset
- * Version: 0.0.9.1
+ * Version: 0.0.9.3
  * License: GPL V3
  * */
 
@@ -31,13 +31,13 @@ box-sizing:border-box;
 
 		b,strong{font-weight:bold;} /* Bold Text fix */
 
-		ol,ul,li{list-style:none;} /* List fix */
+		ol,ul,li{list-style-type:none;} /* Lists */
 		
-		code,pre{font-family:monospace, monospace;}
+		code,pre{font-family:monospace, monospace;} /* Code */
 		
-	/* Fixes from normalize.css | MIT License | github.com/necolas/normalize.css */
+	/* Fixes from normalize.css and me | MIT License | github.com/necolas/normalize.css */
 	
-		button,input,optgroup,select,textarea{margin:0;font:inherit;outline:none;line-height:inherit;} /* Text Fields font, outline, etc fix */
+		button,input,optgroup,select,textarea{margin:0;background:transparent;font:inherit;outline:none;line-height:inherit;} /* Text Fields font, outline, etc fix */
 	
 		code,kbd,samp{font-family:monospace;} /* Code Fix */
 
@@ -51,7 +51,7 @@ box-sizing:border-box;
 
 			sup{top:-0.5em;}
 		
-		img{border:none;} /* IE image border fix */
+		img{display:inline-block;border:none;} /* Image border fix */
 	
 	/* Clear fix */
 	

@@ -27,7 +27,7 @@
 
 /* 950px */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
 	
 		#header,#page_tree,#main{max-width:95%;}
 		
@@ -37,7 +37,7 @@
 		
 			#sidebar_left{max-width:250px;padding-left:20px;}
 			
-			#content{width:540px;margin-left:0;}
+			#content{width:540px;margin-left:10px;}
 			
 				#what_is_missing .side{max-width:240px;}
 			

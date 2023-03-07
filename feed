@@ -13,6 +13,29 @@
 		<link>https://oldpcdev.github.io/nicecss/feed</link>
 		<atom:link rel="self" href="https://oldpcdev.github.io/nicecss/feed" />
 		<item>
+			<title>How Responsive Web Design Killed the Web</title>
+			<description><![CDATA[
+				<h1>How Responsive Web Design Killed the Web</h1>
+				
+				<p>Nowadays, 98% of websites are responsive. And that for a reason: The popularization of smartphones. The need to make the layout work on all devices gave birth to RWD (Responsive Web Design). Before that, designers had to duplicate work, or the site administrator would have to hire a mobile-focused web designer to make their own subdomain for the site. Example: mobile.twitter.com.</p>
+				
+				<p>Designers got tired of using this method and started using media queries. So they ended up using a one-column layout, which is comfortable on mobile devices. However, on screens with a width of 1024px and above, reading is horrible and uncomfortable for the user.</p>
+				
+				<p>It makes the web design look soulless. It makes no sense to focus on a layout for small screens, as the user's view is limited. Honestly, I think this is backwards.</p>
+				
+				<p>On desktops, there are numerous layout possibilities.</p>
+				
+				<p>That's why NiceCSS exists, to bring back that feeling of pleasure when you see a website with beautiful CSS.</p>
+				
+				<p>I really think designers should focus more on desktops, but nobody will listen to me because I'm just a boomer.</p>
+				
+				<p class="pub_date">Mon, 06 Mar 2023 | By <span class="author">oldpcuser</span></p>
+			]]></description>
+			<link>https://oldpcdev.github.io/nicecss/articles/2023/03/rwd-killed-the-web.html</link>
+			<guid>https://oldpcdev.github.io/nicecss/articles/2023/03/rwd-killed-the-web.html</guid>
+			<pubDate>Mon, 06 Mar 2023 22:23:00 +0000</pubDate>
+		</item>
+		<item>
 			<title>Why i use some "outdated" CSS methods?</title>
 			<description><![CDATA[
 				<h1>Why i use some “outdated” methods?</h1>
