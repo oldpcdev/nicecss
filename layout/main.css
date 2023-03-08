@@ -46,9 +46,9 @@ body#main_page{background-image:url(bg_home.jpg);}
 	
 		#header #header_logo{float:left;width:217px;height:57px;background:url(sprite.png) -1px -289px no-repeat;text-indent:-9999px;}
 		
-		#header #header_logo:hover,#header #header_logo:focus{background-position:-1px -232px;}
-		
-		#header #header_logo a{display:block;width:100%;height:100%;}
+			#header #header_logo:hover,#header #header_logo:focus{background-position:-1px -232px;}
+			
+			#header #header_logo a{display:block;width:100%;height:100%;}
 		
 		/* Nav */
 		
@@ -74,25 +74,25 @@ body#main_page{background-image:url(bg_home.jpg);}
 				
 					#header_nav > li.github > a{padding-left:23px;}
 					
-					#header_nav > li.github > a span{
-					display:block;
-					position:absolute;
-					top:7px;
-					left:5px;
-					width:15px;
-					height:15px;
-					background:url(sprite.png) -1px -1px;
-					}
-					
-					#header_nav > li.github > a:hover span{top:6px;background-position:-1px -16px;}
+						#header_nav > li.github > a span{
+						display:block;
+						position:absolute;
+						top:7px;
+						left:5px;
+						width:15px;
+						height:15px;
+						background:url(sprite.png) -1px -1px;
+						}
+						
+							#header_nav > li.github > a:hover span{top:6px;background-position:-1px -16px;}
 				
 				/* Rounded Borders */
 				
-				#header_nav > li > a::before,#header_nav > li > a::after{content:"";position:absolute;height:28px;width:5px;background:#6d6d6d url(borders.png);}
-				
-				#header_nav > li > a::before{top:0;left:0;background-position:0 0;}
-				
-				#header_nav > li > a::after{top:0;right:0;background-position:-5px 0;}
+					#header_nav > li > a::before,#header_nav > li > a::after{content:"";position:absolute;height:28px;width:5px;background:#6d6d6d url(borders.png);}
+					
+						#header_nav > li > a::before{top:0;left:0;background-position:0 0;}
+						
+						#header_nav > li > a::after{top:0;right:0;background-position:-5px 0;}
 		
 /* Page Tree */
 
@@ -113,23 +113,23 @@ body#main_page{background-image:url(bg_home.jpg);}
 			font:400 14px/14px "Fira Sans",Arial,sans-serif;
 			}
 			
-			#page_tree > li > a:hover{color:#fbfbfb;}
+				#page_tree > li > a:hover{text-decoration:underline;color:#fbfbfb;}
 			
-			#page_tree > li > a::after{
-			content:"";
-			position:absolute;
-			top:1px;
-			right:2px;
-			width:13px;
-			height:13px;
-			background:url(sprite.png) -80px -27px;
-			}
+				#page_tree > li > a::after{
+				content:"";
+				position:absolute;
+				top:1px;
+				right:2px;
+				width:13px;
+				height:13px;
+				background:url(sprite.png) -80px -27px;
+				}
 			
-			#page_tree > li > a:hover::after{background-position:-80px -40px;}
+					#page_tree > li > a:hover::after{background-position:-80px -40px;}
 			
 				#page_tree > li.last > a{padding-right:0;}
 				
-				#page_tree > li.last > a::after{display:none;}
+						#page_tree > li.last > a::after{display:none;}
 			
 /* Main */
 			
@@ -227,32 +227,29 @@ body#main_page{background-image:url(bg_home.jpg);}
 			
 				#sidebar_left .about p a{color:#e0e0e0;}
 				
-				#sidebar_left .about p a:hover{text-decoration:underline;}
+					#sidebar_left .about p a:hover{text-decoration:underline;}
 		
 			/* Rounded Borders */
 			
 			#sidebar_left .about::before,#sidebar_left .about::after{content:"";position:absolute;width:195px;height:5px;background:url(borders.png) no-repeat;}
 			
-			#sidebar_left .about::before{top:0;left:0;background-position:-10px 0;}
-			
-			#sidebar_left .about:hover::before{top:0;left:0;background-position:-10px -21px;}
-			
-			#sidebar_left .about::after{bottom:-11px;left:0;height:16px;background-position:-10px -5px;}
-			
-			#sidebar_left .about:hover::after{left:0;background-position:-10px -26px;}
+				#sidebar_left .about::before{top:0;left:0;background-position:-10px 0;}
+				
+						#sidebar_left .about:hover::before{top:0;left:0;background-position:-10px -21px;}
+				
+				#sidebar_left .about::after{bottom:-11px;left:0;height:16px;background-position:-10px -5px;}
+				
+						#sidebar_left .about:hover::after{left:0;background-position:-10px -26px;}
 	
 	/* Content */
 	
 	#content{float:left;width:570px;margin-left:20px;}
 	
-		/* Some Fixes */
+		/* Miscellaneous */
 		
 		#principal,
 		#what_is_missing,
-		#wait,
 		.post{margin-bottom:10px;}
-		
-		#principal h1,#wait h1{margin-bottom:5px;}
 	
 		/* Principal */
 		
@@ -268,7 +265,7 @@ body#main_page{background-image:url(bg_home.jpg);}
 		
 			/* Left Content */
 			
-			#principal h1{font:500 32px/25px "Labrada",Georgia,Times,sans-serif;letter-spacing:.6px;color:#297B8F;}
+			#principal h1{margin-bottom:5px;font:500 32px/25px "Labrada",Georgia,Times,sans-serif;letter-spacing:.6px;color:#297B8F;}
 			
 				#principal h1 .emph{letter-spacing:-.2px;color:#1E5A69;}
 			
@@ -351,12 +348,12 @@ body#main_page{background-image:url(bg_home.jpg);}
 		
 		.post h6{font-size:16px;}
 		
-		.post h1 a:hover,
-		.post h2 a:hover,
-		.post h3 a:hover,
-		.post h4 a:hover,
-		.post h5 a:hover,
-		.post h6 a:hover{text-decoration:underline;}
+		.post h1 a,
+		.post h2 a,
+		.post h3 a,
+		.post h4 a,
+		.post h5 a,
+		.post h6 a{text-decoration:underline;}
 		
 		/* Post Paragraphs */
 		
@@ -377,7 +374,6 @@ body#main_page{background-image:url(bg_home.jpg);}
 		.post > .img_box{position:relative;margin:5px 0 8px;}
 		
 			.post > .img_box img{
-			display:block;
 			min-width:200px;
 			max-width:560px;
 			min-height:110px;
@@ -438,13 +434,7 @@ body#main_page{background-image:url(bg_home.jpg);}
 		
 		.post .list{margin:10px;}
 			
-			.post .list > li{
-			position:relative;
-			display:block;
-			padding:0 0 10px 13px;
-			font:400 13px/13px "Fira Sans","Trebuchet MS",Arial,sans-serif;
-			color:#6b390b;
-			}
+			.post .list > li{position:relative;display:block;padding:0 0 10px 13px;font:400 13px/13px "Fira Sans","Trebuchet MS",Arial,sans-serif;color:#6b390b;}
 			
 			.post .list > li::before{
 			content:"";
@@ -496,24 +486,25 @@ body#main_page{background-image:url(bg_home.jpg);}
 			
 			.post ol.list li{position:relative;padding-left:18px;}
 
-			.post ol.list li::before{
-			content:counter(item) ":";
-			counter-increment:item;
-			position:absolute;
-			top:5px;
-			left:0;
-			background:none;
-			font:italic 700 16px/0 "Fira Sans","Trebuchet MS",Arial,sans-serif;
-			letter-spacing:1px;
-			}
+				.post ol.list li::before{
+				content:counter(item) ":";
+				counter-increment:item;
+				position:absolute;
+				top:5px;
+				left:0;
+				background:none;
+				font:italic 700 16px/0 "Fira Sans","Trebuchet MS",Arial,sans-serif;
+				letter-spacing:1px;
+				}
 				
 		/* Post Blockquotes */
 		
 		.post blockquote{position:relative;width:570px;margin:10px 0;padding:20px 15px;background:#6b390b;}
 		
-		.post blockquote:hover{background:#A86B31;}
-		
-		.post blockquote:hover *::selection{background:#6b390b;}
+			.post blockquote:hover{background:#A86B31;}
+			
+				.post blockquote:hover *::selection,
+				.post blockquote:hover *::-moz-selection{background:#6b390b;}
 		
 			/* Rounded Borders */
 			
@@ -529,19 +520,19 @@ body#main_page{background-image:url(bg_home.jpg);}
 		
 			.post blockquote p{margin:0;padding:0 42px 0 0;font-size:16px;font-style:italic;letter-spacing:.8px;color:#F59B47;}
 			
-			.post blockquote:hover p{color:#fbfbfb;}
-			
-			.post blockquote p::after{
-			content:"";
-			position:absolute;
-			bottom:10px;
-			right:20px;
-			width:22px;
-			height:22px;
-			background:url(sprite.png) -57px -184px;
-			}
-			
-			.post blockquote:hover p::after{background-position:-57px -207px}
+				.post blockquote:hover p{color:#fbfbfb;}
+				
+					.post blockquote p::after{
+					content:"";
+					position:absolute;
+					bottom:10px;
+					right:20px;
+					width:22px;
+					height:22px;
+					background:url(sprite.png) -57px -184px;
+					}
+					
+						.post blockquote:hover p::after{background-position:-57px -207px}
 			
 			/* Code */
 			
@@ -556,39 +547,34 @@ body#main_page{background-image:url(bg_home.jpg);}
 			color:#F59B47;
 			}
 			
-			.post pre:hover{background:#A86B31;color:#fbfbfb;}
-			
-			.post pre:hover *::selection{background:#6b390b;}
+				.post pre:hover{background:#A86B31;color:#fbfbfb;}
+				
+					.post pre:hover *::selection,
+					.post pre:hover *::-moz-selection{background:#6b390b;}
 			
 				/* Rounded Borders */
 				
-				.post pre::before,.post pre::after{
-				content:"";
-				position:absolute;
-				width:570px;
-				height:5px;
-				background:url(borders.png);
-				}
+				.post pre::before,.post pre::after{content:"";position:absolute;width:570px;height:5px;background:url(borders.png);}
 				
-				.post pre::before{top:0;left:0;background-position:-83px -43px;}
-			
-				.post pre::after{bottom:0;left:0;background-position:-83px -48px;}
-				
-				.post pre:hover::before{background-position:-83px -53px;}
-				
-				.post pre:hover::after{background-position:-83px -58px;}
-				
-				.post pre > span::after{
-				content:"";
-				position:absolute;
-				right:30px;
-				bottom:20px;
-				width:22px;
-				height:22px;
-				background:url(sprite.png) -80px -185px;
-				}
-				
-				.post pre:hover > span::after{background-position:-80px -208px;}
+							.post pre::before{top:0;left:0;background-position:-83px -43px;}
+						
+							.post pre::after{bottom:0;left:0;background-position:-83px -48px;}
+							
+							.post pre:hover::before{background-position:-83px -53px;}
+							
+							.post pre:hover::after{background-position:-83px -58px;}
+					
+						.post pre > span::after{
+						content:"";
+						position:absolute;
+						right:30px;
+						bottom:20px;
+						width:22px;
+						height:22px;
+						background:url(sprite.png) -80px -185px;
+						}
+						
+						.post pre:hover > span::after{background-position:-80px -208px;}
 				
 			/* Tables */
 				
@@ -609,6 +595,118 @@ body#main_page{background-image:url(bg_home.jpg);}
 					.post table td a,.post table th a{text-decoration:underline;}
 					
 						.post table td:hover a,.post table th:hover a{text-decoration:none;}
+					
+			/* Template Info */
+			
+			.post .template_info{margin:0px 5px 15px;padding-bottom:20px;background:url(spacer.jpg) repeat-x bottom left;}
+			
+				/* Sides */
+			
+				.post .template_info .side{float:left;width:280px;}
+				
+				/* Title */
+				
+				.post .template_info h1,
+				.post .template_info h2,
+				.post .template_info h3,
+				.post .template_info h4,
+				.post .template_info h5,
+				.post .template_info h6{margin:0 0 8px;font-weight:500;line-height:18px;letter-spacing:.4px;}
+				
+				/* Text */
+				
+				.post .template_info p{
+				margin:0 0 5px 2px;
+				font-family:"Labrada",Georgia,Times,serif;
+				font-weight:400;
+				text-indent:0;
+				line-height:22px;
+				letter-spacing:-.4px;
+				color:#6b390b;
+				}
+				
+				/* Color Pallete List */
+				
+				.post .template_info .list{margin:0 0 10px 10px;}
+				
+					.post .template_info .list li{padding-left:18px;}
+					
+						.post .template_info .list li::before{background-position:-43px -169px;}
+				
+				/* Buttons */
+				
+					.post .template_info .button span{position:relative;display:block;padding-left:20px;}
+					
+						.post .template_info .button span::before{
+						content:"";
+						position:absolute;
+						top:0;
+						left:0;
+						width:14px;
+						height:14px;
+						background:url(sprite.png);
+						}
+						
+							/* Download */
+						
+							.post .template_info .download span::before{background-position:-1px -31px;}
+							
+								.post .template_info .download:hover span::before{background-position:-1px -46px;}
+								
+							/* Preview */
+								
+							.post .template_info .preview span::before{background-position:-1px -61px;}
+						
+								.post .template_info .preview:hover span::before{background-position:-1px -76px;}
+				
+				/* Image */
+				
+				.post .template_info .img_box img{
+				width:265px;
+				height:230px;
+				margin:10px 0 0 10px;
+				background:#fff;
+				padding:2px;
+				background:#fbfbfb url(../img/not_found.jpg) center no-repeat;
+				border:1px solid #c0c0c0;
+				}
+				
+					.post .template_info .img_box:hover img{background:#e0e0e0 url(../img/not_found_hov.jpg) center no-repeat;border-color:#555555;}
+					
+			/* Buttons */
+			
+			.post .button{
+			position:relative;
+			float:left;
+			display:block;
+			height:28px;
+			margin-right:15px;
+			padding:6px 10px 0;
+			background:#6b390b;
+			font-family:"Labrada",Georgia,Times,serif;
+			font-size:14px;
+			font-weight:500;
+			letter-spacing:.4px;
+			color:#F59B47;
+			}
+			
+				.post .button:hover{background:#A86B31;text-decoration:underline;color:#fbfbfb;}
+					
+					.post .button::before,.post .button::after{
+					content:"";
+					position:absolute;
+					width:2px;
+					height:28px;
+					background:url(borders.png);
+					}
+					
+						.post .button::before{top:0;left:0;background-position:-205px 0;}
+						
+						.post .button::after{top:0;right:0;background-position:-207px 0;}
+						
+							.post .button:hover::before{top:0;left:0;background-position:-209px 0;}
+							
+							.post .button:hover::after{top:0;right:0;background-position:-211px 0;}
 		
 /* End of Main */
 

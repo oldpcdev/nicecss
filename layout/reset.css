@@ -15,13 +15,10 @@ font:inherit;
 line-height:1;
 vertical-align:baseline;
 border:0;
-outline:none;
 box-sizing:border-box;
 -webkit-box-sizing:border-box;
 -moz-box-sizing:border-box;
 }
-
-*:focus{border-bottom:1px dashed currentColor;}
 
 *::after,*::before{box-sizing:inherit;-moz-box-sizing:inherit;-webkit-box-sizing:inherit;}
 
@@ -45,7 +42,7 @@ box-sizing:border-box;
 	
 		button,input,optgroup,select,textarea{margin:0;background:transparent;font:inherit;outline:none;line-height:inherit;} /* Text Fields font, outline, etc fix */
 	
-		code,kbd,samp{font-family:monospace;} /* Code Fix */
+		code,kbd,samp{font-family:monospace;} /* Monospaced Code */
 
 		small{font-size:75%;}
 		
@@ -57,7 +54,7 @@ box-sizing:border-box;
 
 			sup{top:-0.5em;}
 		
-		img{display:inline-block;border:none;} /* Image border fix */
+		img{display:block;border:none;color:transparent;} /* Image border fix */
 	
 	/* Clear fix (Brownlooks only) */
 	
@@ -78,6 +75,8 @@ box-sizing:border-box;
 	.post h4::before,.post h4::after,
 	.post h5::before,.post h5::after,
 	.post h6::before,.post h6::after,
+	.post .template_info::before,.post .template_info::after,
+	.post .button_container::before,.post .button_container::after,
 	.cl::before,.cl::after{content:"";display:table;}
 	
 	#header_container::after,
@@ -97,6 +96,8 @@ box-sizing:border-box;
 	.post h4::before,
 	.post h5::before,
 	.post h6::before,
+	.post .template_info::after,
+	.post .button_container::before,.post .button_container::after,
 	.cl::after{clear:both;}
 	
 	/* End Clearfix */
