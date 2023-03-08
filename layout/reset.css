@@ -21,6 +21,8 @@ box-sizing:border-box;
 -moz-box-sizing:border-box;
 }
 
+*:focus{border-bottom:1px dashed currentColor;}
+
 *::after,*::before{box-sizing:inherit;-moz-box-sizing:inherit;-webkit-box-sizing:inherit;}
 
 	/* Text Fixes */

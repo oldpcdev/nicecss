@@ -620,7 +620,9 @@ body#main_page{background-image:url(bg_home.jpg);}
 	
 		/* Footer Selection and Links */
 		
-		#footer *::selection{background:#e0ba82;color:#6b390b;}
+		#footer *::selection,
+		#footer *::-moz-selection
+		{background:#e0ba82;color:#6b390b;}
 		
 		#footer a:hover{text-decoration:underline;}
 	
@@ -635,43 +637,22 @@ body#main_page{background-image:url(bg_home.jpg);}
 		/* Title */
 		
 		#footer h1{margin-bottom:10px;font-family:"Labrada",Georgia,Times,serif;font-size:22px;letter-spacing:-.4px;color:#F59B47;}
-		
-		/* Latest Posts */
 
-			#footer .latest_posts > li > a{
-			position:relative;
-			display:block;
-			padding:5px 0 5px 16px;
-			font-size:12px;
-			letter-spacing:-.2px;
-			color:#e0ba82;
-			}
+		/* Templates */
+		
+		#footer .templates{margin:15px 5px 5px;counter-reset:item;}
+
+			#footer .templates > li{position:relative;margin-bottom:10px;padding-left:14px;font-size:12px;color:#e0ba82}
 			
-			#footer .latest_posts > li > a:hover{color:#e0e0e0;}
-			
-			#footer .latest_posts > li > a::before{
-			content:"";
-			position:absolute;
-			top:5px;
-			left:0;
-			width:12px;
-			height:12px;
-			background:url(sprite.png) -80px -1px;
-			}
-			
-			#footer .latest_posts > li > a:hover::before{background-position:-80px -14px;}
-			
-				/* RSS */
-				
-				#footer .latest_posts > .rss{display:inline-block;margin-top:5px;}
-					
-					/* Link */
-				
-					#footer .latest_posts > .rss > a{width:83px;height:25px;background:url(borders.png) 0 -68px;text-indent:-9999px;}
-					
-					#footer .latest_posts > .rss > a::after,#footer .latest_posts > .rss > a::before{display:none;}
-					
-						#footer .latest_posts > .rss:hover > a{background-position:0 -43px;color:#fbfbfb;}
+				#footer .templates > li::before{
+				content:counter(item) "";
+				counter-increment:item;
+				position:absolute;
+				top:2px;
+				left:0;
+				font:italic 700 22px/0 "Labrada","Trebuchet MS",Arial,sans-serif;
+				color:#F59B47;
+				}
 		
 		/* Projects */
 		
